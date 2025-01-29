@@ -1,0 +1,12 @@
+.textCatInfo {
+    font-size: small;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    
+
+  }
+  .textContainer::first-line {
+    border: 4px solid gray;
+    box-sizing: content-box;  
+  }

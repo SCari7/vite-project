@@ -1,0 +1,16 @@
+
+
+.image{
+    border:  solid color #222;
+    width: 600px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.btn{
+    border: 2px;
+    padding: 16px;
+    margin: 22px
+}
