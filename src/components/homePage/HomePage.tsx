@@ -20,8 +20,6 @@ export default function HomePage() {
         <Link to='lesson-12'><div>Lesson 12</div></Link>
         <Link to='lesson_12'><div>Lesson_12</div></Link>
         <Link to='lesson-13'><div>Lesson 13</div></Link>
-        <Link to='login'><div>Login</div></Link>
-        <Link to='register'><div>Register</div></Link>
       </div>
     </div>
   )
