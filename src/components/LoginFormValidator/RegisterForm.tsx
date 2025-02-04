@@ -19,7 +19,7 @@ export default function RegisterForm() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <h2>Register</h2>
+      <h2>Sign up </h2>
       <div className={styles.register_form}>
         <input
           type="text"
@@ -56,7 +56,7 @@ export default function RegisterForm() {
           onChange={formik.handleChange}
         />
         <span>{formik.errors.confirmPassword}</span>
-        <button type="submit">Register</button>
+        <button type="submit">Sign up</button>
       </div>
     </form>
   );

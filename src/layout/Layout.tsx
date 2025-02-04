@@ -11,6 +11,8 @@ export default function Layout() {
         <NavLink className={({isActive}) => (isActive ? styles.linkActive : '')} to={'gender-form'}>gender form</NavLink>
         <NavLink className={({isActive}) => (isActive ? styles.linkActive : '')} to={'login-Form'}>login form</NavLink>
         <NavLink className={({isActive}) => (isActive ? styles.linkActive : '')} to={'homework001'}>my card</NavLink>
+        <NavLink className={({isActive}) => (isActive ? styles.linkActive : '')} to={'register'}>sign up </NavLink>
+        <NavLink className={({isActive}) => (isActive ? styles.linkActive : '')} to={'login'}>log in</NavLink>
       </header>
       <main className={styles.main}>
         {/* за место компонента Outlet импортированного из React Router будут приходить компоненты из маршрутизации, которую мы описываем в App.tsx */}
