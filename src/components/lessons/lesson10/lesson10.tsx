@@ -6,6 +6,7 @@ import style from "./lesson10.module.css";
 interface ICatImageData {
   url: string;
 }
+
 interface ICatFactData {
   fact: string;
 }
@@ -52,34 +53,29 @@ export default function Lesson10(): JSX.Element {
     setIsLoading(false); // выкл индикатор загрузки
   };
 
-  
   const delFacts = (): void => {
     setCatArray([]);
   };
 
- 
   useEffect(() => {
     handleGetCatAndFact();
   }, []);
 
   return (
     <div className={style.container}>
-      
-
       <div className={style.bbtn}>
         {isLoading && <Loader />}
-         <button className={style.btn_info} onClick={handleGetCatAndFact}>
-        Get more info!
-      </button>
-
-      {catArray.length > 0 && (
-        <button className={style.btn_del} onClick={delFacts}>
-          DELETE ALL DATA
+        <button className={style.btn_info} onClick={handleGetCatAndFact}>
+          Get more info!
         </button>
-      )}
 
+        {catArray.length > 0 && (
+          <button className={style.btn_del} onClick={delFacts}>
+            DELETE ALL DATA
+          </button>
+        )}
       </div>
-     
+
       <div className={style.grid_container}>
         {catArray.map((item, index) => (
           <div className={style.grid_item} key={index}>

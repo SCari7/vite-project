@@ -1,0 +1,44 @@
+/* Общий стиль для контейнера */
+.gender {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Стиль для input */
+  .inputField {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.1); /* Прозрачный синий фон */
+    outline: none;
+    transition: all 0.3s ease; /* Плавный переход для изменений */
+    width: 250px; /* Установите размер по вашему усмотрению */
+  }
+  
+  .inputField:hover {
+    border-color: #0000ff; /* Синяя рамка при наведении */
+    transform: scale(1.05); /* Увеличение размера */
+  }
+  
+  .inputField:focus {
+    border-color: #0000ff; /* Синяя рамка при фокусе */
+    background-color: rgba(0, 0, 255, 0.2); /* Темнее фон при фокусе */
+  }
+  
+  
+ 
+  /* Стилизация заголовка */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.3s ease; /* Плавный переход для изменений */
+  }
+  
+  h2:hover {
+    color: #0000ff; /* Цвет текста синим при наведении */
+    transform: scale(1.05); /* Увеличение размера заголовка при наведении */
+  }
+  

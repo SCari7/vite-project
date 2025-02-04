@@ -14,7 +14,7 @@ const handelSubmit = () => {
 };
 return (
 <form onSubmit={handelSubmit} className="login-form">
-      <h2>Вход</h2>
+      <h3>Personal account </h3>
       <MyInput
         name="login"
         type="text"

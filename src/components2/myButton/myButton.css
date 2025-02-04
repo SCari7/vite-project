@@ -1,8 +1,8 @@
 .myButton {
     margin: 3px;
     /* border-radius: 5px; */
-    background-color: rgb(102, 0, 255);
+    background-color: rgba(18, 39, 92, 0.21);
 }
 .myButton:hover {
-    background-color: rgba(0, 15, 127, 0.567);
+    background-color: rgba(17, 20, 48, 0.518);
 }

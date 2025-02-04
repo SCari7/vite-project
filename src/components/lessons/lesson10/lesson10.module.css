@@ -1,8 +1,8 @@
 .bbtn {
   display: flex;
-  justify-content: space-between; /* Разнести кнопки */
+  justify-content: space-around; 
   align-items: center;
-  width: 100%;
+ 
   padding: 20px; /* Отступ сверху */
 }
 
@@ -15,27 +15,51 @@
 
 .container {
   text-align: center;
+  overflow-x: hidden;
 }
+
 .grid_container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(200px, 1fr)
-  ); /* Адаптивные колонки */
-  grid-auto-rows: 300px; /* Фиксированная высота */
+  margin: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Адаптивные колонки */
+  grid-auto-rows: auto; /* Даем возможность строкам расширяться по содержимому */
   gap: 40px;
-  align-items: start; /* Фиксируем высоту грид-элементов */
   text-align: center;
+  justify-items: center; /* Центрируем элементы по горизонтали */
 }
-.cat_img {
-  width: 100%;
-  height: 200px; /* Фиксированная высота */
-  object-fit: cover; /* Обрезает изображение, не меняя размер грид-ячейки */
-  border-radius: 8px;
-}
+
 .grid_item {
   background: #411c389e;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+
+.cat_img {
+  width: 100%;
+  height: 200px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезает изображение, не меняя размер грид-ячейки */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Отступ снизу для картинки */
+}
+
+.grid_item p {
+  flex-grow: 1; /* Позволяет тексту занимать доступное пространство */
+  margin: 0;
+  text-align: left;
+  overflow: hidden; /* Если текста слишком много, обрезать его */
+  text-overflow: ellipsis; /* Добавить многоточие, если текст не помещается */
+  white-space: nowrap; /* Не переносить текст */
+}
+
+.grid_item .btn_info,
+.grid_item .btn_del {
+  margin-top: 10px; /* Отступ от текста */
+  width: 100%;
+  text-align: center;
 }
